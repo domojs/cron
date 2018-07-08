@@ -66,8 +66,8 @@
     xml2js "^0.4.19"
 
 "@domojs/lifttt@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.2.tgz#59f21105edf098943a6f449e67837e6b0c0ac6b9"
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.3.tgz#7b9c12991c438f5641f25d307fbb1fb9d4c0a50d"
   dependencies:
     "@akala/server" "^2.0.27"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
