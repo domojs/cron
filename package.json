@@ -20,7 +20,7 @@
         "uuid": "^3.3.2"
     },
     "peerDependencies": {
-        "@domojs/lifttt": "^1.0.1"
+        "@domojs/lifttt": "^1.0.6"
     },
     "devDependencies": {
         "@akala-modules/core": "^1.1.3",

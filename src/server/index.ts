@@ -103,8 +103,8 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
 
         akala.injectWithNameAsync([AssetRegistration.name], function (va: AssetRegistration)
         {
-            va.register('/js/tiles.js', require.resolve('../tile'));
-            va.register('/js/routes.js', require.resolve('../routes'));
+            // va.register('/js/tiles.js', require.resolve('../tile'));
+            // va.register('/js/routes.js', require.resolve('../routes'));
         });
 
     }
