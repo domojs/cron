@@ -39,8 +39,8 @@
     ws "^5.0.0"
 
 "@akala/json-rpc-ws@^4.1.10", "@akala/json-rpc-ws@^4.1.11", "@akala/json-rpc-ws@^4.1.23":
-  version "4.1.23"
-  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-4.1.23.tgz#d790f2790b8daf78e7ed1fdfb4001d6349e566ad"
+  version "4.1.24"
+  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-4.1.24.tgz#8b890d4e05dbf01255997d02ae621d13fe0ddf18"
   dependencies:
     debug "^3.0.0"
     uuid "^3.0.0"
@@ -66,8 +66,8 @@
     xml2js "^0.4.19"
 
 "@domojs/lifttt@^1.0.1":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.3.tgz#7b9c12991c438f5641f25d307fbb1fb9d4c0a50d"
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.6.tgz#845f8d38efb220081c3e6fac3e3c42cf9f46433d"
   dependencies:
     "@akala/server" "^2.0.27"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
@@ -106,6 +106,12 @@
 "@types/node@*":
   version "10.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.2.tgz#f19f05314d5421fe37e74153254201a7bf00a707"
+
+"@types/uuid@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-3.4.3.tgz#121ace265f5569ce40f4f6d0ff78a338c732a754"
+  dependencies:
+    "@types/node" "*"
 
 accepts@~1.3.5:
   version "1.3.5"
@@ -1109,7 +1115,7 @@ utils-merge@1.0.1, utils-merge@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
-uuid@^3.0.0, uuid@^3.2.1, uuid@^3.3.0:
+uuid@^3.0.0, uuid@^3.2.1, uuid@^3.3.0, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
