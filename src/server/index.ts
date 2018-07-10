@@ -40,7 +40,7 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
             // Called when all modules have been initialized
 
         });
-        master(__filename, './master');
+
         akala.injectWithNameAsync(['$agent.lifttt'], async function (client)
         {
             var cl = akala.api.jsonrpcws(lifttt.channel).createClient(client, {

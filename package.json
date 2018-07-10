@@ -1,8 +1,9 @@
 {
     "name": "@domojs/cron",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "dist/server/index.js",
+    "types": "dist/server/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\"",
         "build:js": "tsc -p src",
@@ -12,9 +13,8 @@
         "build": "npm run build:js"
     },
     "keywords": [],
-    "author": "",
+    "author": "npenin",
     "license": "MIT",
-    "types": "dist/server/index.d.ts",
     "dependencies": {
         "@akala/server": "^2.0.31",
         "uuid": "^3.3.2"
