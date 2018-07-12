@@ -5,13 +5,13 @@ import * as lifttt from '@domojs/lifttt';
 import { getTarget } from '../client/date';
 import { v4 as uuid } from 'uuid';
 
-var timers = {};
+var timers: { [key: string]: { callback: Function, timeout?: NodeJS.Timer } } = {};
 
 function intervaller(fields: { minute?: number, hour?: number, day?: number[], exceptions: number[], date?: number | 'last', month?: number, lat: number, lng: number, tz: number }, callback:
     (fields: { minute?: number, hour?: number, day?: number[], exceptions: number[], date?: number | 'last', month?: number, lat: number, lng: number, tz: number }) => void, id?: string)
 {
     if (!id)
-        timers[id = uuid()] = callback;
+        timers[id = uuid()] = { callback: callback };
 
     var timeOut = setTimeout(function ()
     {
@@ -20,9 +20,12 @@ function intervaller(fields: { minute?: number, hour?: number, day?: number[], e
         callback(fields);
     }, getTarget(fields).getTime() - new Date().getTime());
 
+    timers[id].timeout = timeOut;
+
     var cancelPreviousListener = function ()
     {
         clearTimeout(timeOut);
+        delete timers[id];
     };
 
     process.on('exit', cancelPreviousListener);
@@ -44,13 +47,17 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
         akala.injectWithNameAsync(['$agent.lifttt'], async function (client)
         {
             var cl = akala.api.jsonrpcws(lifttt.channel).createClient(client, {
-                executeAction: function (action)
+                executeAction(action)
                 {
                 },
-                executeCondition: function (condition)
+                executeCondition(condition)
                 {
                 },
-                executeTrigger: function (trigger)
+                stopTrigger(trigger)
+                {
+                    clearTimeout(timers[trigger.id].timeout);
+                },
+                executeTrigger(trigger)
                 {
                     var id = intervaller(trigger.fields as any, function ()
                     {
