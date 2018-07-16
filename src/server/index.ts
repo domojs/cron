@@ -67,7 +67,7 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
                 }
             });
             var server = cl.$proxy();
-            await server.registerChannel({ name: 'date', icon: 'clock' })
+            await server.registerChannel({ name: 'cron', icon: 'clock' })
             await server.registerTrigger({
                 "name": "every day", fields: [
                     { "name": "hour", "displayName": "Heure", type: 'int' },

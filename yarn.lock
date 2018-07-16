@@ -19,10 +19,10 @@
     showdown "^1.8.6"
 
 "@akala/core@^2.0.33":
-  version "2.0.36"
-  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.36.tgz#24541eb2d02f7a990a112c48cac5d0e0091f436e"
+  version "2.0.37"
+  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.37.tgz#231682efa29769e17598cf2b649f01bac9dad32a"
   dependencies:
-    "@akala/json-rpc-ws" "^4.1.10"
+    "@akala/json-rpc-ws" "^4.1.25"
     "@types/mock-require" "^2.0.0"
     array-flatten "^2.1.1"
     browser-process-hrtime "^0.1.2"
@@ -38,13 +38,13 @@
     utils-merge "^1.0.0"
     ws "^5.0.0"
 
-"@akala/json-rpc-ws@^4.1.10", "@akala/json-rpc-ws@^4.1.11", "@akala/json-rpc-ws@^4.1.23":
-  version "4.1.24"
-  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-4.1.24.tgz#8b890d4e05dbf01255997d02ae621d13fe0ddf18"
+"@akala/json-rpc-ws@^4.1.11", "@akala/json-rpc-ws@^4.1.23", "@akala/json-rpc-ws@^4.1.25":
+  version "4.1.25"
+  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-4.1.25.tgz#e94f48b4d1aadd0b0a089faddd4617671e549498"
   dependencies:
-    debug "^3.0.0"
+    debug "^3.1.0"
     uuid "^3.0.0"
-    ws "^3.0.0"
+    ws "^5.2.2"
 
 "@akala/server@^2.0.27", "@akala/server@^2.0.31", "@akala/server@^2.0.5":
   version "2.0.31"
@@ -66,8 +66,8 @@
     xml2js "^0.4.19"
 
 "@domojs/lifttt@^1.0.1":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.8.tgz#74bb1633e0da25e5d1a05d56807a983f0df68032"
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.9.tgz#f6aff15a785e93252ff0e201ac6382d5131e3bf0"
   dependencies:
     "@akala/server" "^2.0.27"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
@@ -281,7 +281,7 @@ debug@2.6.9, debug@^2.6.8:
   dependencies:
     ms "2.0.0"
 
-debug@^3.0.0, debug@^3.1.0:
+debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -1158,7 +1158,7 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-ws@^3.0.0, ws@^3.3.2:
+ws@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/ws/-/ws-3.3.3.tgz#f1cf84fe2d5e901ebce94efaece785f187a228f2"
   dependencies:
@@ -1166,7 +1166,7 @@ ws@^3.0.0, ws@^3.3.2:
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
 
-ws@^5.0.0:
+ws@^5.0.0, ws@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/ws/-/ws-5.2.2.tgz#dffef14866b8e8dc9133582514d1befaf96e980f"
   dependencies:
