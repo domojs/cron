@@ -7,8 +7,8 @@ import { v4 as uuid } from 'uuid';
 
 var timers: { [key: string]: { callback: Function, timeout?: NodeJS.Timer } } = {};
 
-function intervaller(fields: { minute?: number, hour?: number, day?: number[], exceptions: number[], date?: number | 'last', month?: number, lat: number, lng: number, tz: number }, callback:
-    (fields: { minute?: number, hour?: number, day?: number[], exceptions: number[], date?: number | 'last', month?: number, lat: number, lng: number, tz: number }) => void, id?: string)
+function intervaller(fields: { minute?: number, hour?: number, day?: number[], exceptions?: number[], date?: number | 'last', month?: number, lat?: number, lng?: number, tz?: number }, callback:
+    (fields: { minute?: number, hour?: number, day?: number[], exceptions?: number[], date?: number | 'last', month?: number, lat?: number, lng?: number, tz?: number }) => void, id?: string)
 {
     if (!id)
         timers[id = uuid()] = { callback: callback };
@@ -59,8 +59,10 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
                 },
                 executeTrigger(trigger)
                 {
-                    var id = intervaller(trigger.fields as any, function ()
+                    akala.logger.info(`executing trigger ${JSON.stringify(trigger.fields)}`)
+                    var id = intervaller(trigger.fields, function ()
                     {
+                        akala.logger.info(`trigger ${JSON.stringify(trigger.fields)}`)
                         server.trigger({ id: id, data: { ...trigger.fields, date: new Date().toISOString() } })
                     });
                     return id;

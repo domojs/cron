@@ -46,9 +46,9 @@
     uuid "^3.0.0"
     ws "^5.2.2"
 
-"@akala/server@^2.0.27", "@akala/server@^2.0.31", "@akala/server@^2.0.5":
-  version "2.0.31"
-  resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.0.31.tgz#2fff6e7de42882bbe05739be9807f0c88bb10ad4"
+"@akala/server@^2.0.31", "@akala/server@^2.0.33", "@akala/server@^2.0.5":
+  version "2.0.35"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.0.35.tgz#b024743a43b0bfac1b8140ed1dd603f067020613"
   dependencies:
     "@akala/core" "^2.0.33"
     "@akala/json-rpc-ws" "^4.1.23"
@@ -66,36 +66,36 @@
     xml2js "^0.4.19"
 
 "@domojs/lifttt@^1.0.1":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.9.tgz#f6aff15a785e93252ff0e201ac6382d5131e3bf0"
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.21.tgz#161ae2f7be29a14b117eaa50bf1b6cd115e315bf"
   dependencies:
-    "@akala/server" "^2.0.27"
+    "@akala/server" "^2.0.33"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
     "@fortawesome/free-solid-svg-icons" "^5.1.0"
     "@fortawesome/pro-light-svg-icons" "^5.1.0"
     uuid "^3.3.0"
 
-"@fortawesome/fontawesome-common-types@^0.2.0":
-  version "0.2.0"
-  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.0.tgz#6bcf6481030f59e7ffd1a40a67cd464d47780f6a"
+"@fortawesome/fontawesome-common-types@^0.2.1":
+  version "0.2.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.1.tgz#b919b31ab1b42cd2aadab5fa45934347c30ee316"
 
 "@fortawesome/fontawesome-svg-core@^1.2.0":
-  version "1.2.0"
-  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.0.tgz#b0ec14af25cdc11d38ede7d8c94b89b478ab67ab"
+  version "1.2.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.1.tgz#ae203b7563a8b6d7ebf8fe66253b92bd7a7a8a08"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.0"
+    "@fortawesome/fontawesome-common-types" "^0.2.1"
 
 "@fortawesome/free-solid-svg-icons@^5.1.0":
-  version "5.1.0"
-  resolved "https://npm.fontawesome.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.1.0.tgz#1a4b43027104d63c7862fd39333f6ed6d8bb2c9a"
+  version "5.1.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.1.1.tgz#35ebdb374c48fbad4b1812fe20314422d729fc9d"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.0"
+    "@fortawesome/fontawesome-common-types" "^0.2.1"
 
 "@fortawesome/pro-light-svg-icons@^5.1.0":
-  version "5.1.0"
-  resolved "https://npm.fontawesome.com/@fortawesome/pro-light-svg-icons/-/pro-light-svg-icons-5.1.0.tgz#af2bd0b5dddad2c4ef5557d42005514130c9e952"
+  version "5.1.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-light-svg-icons/-/pro-light-svg-icons-5.1.1.tgz#95d67509f1948a9c8d4cb3515a48e8ba05fd844f"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.0"
+    "@fortawesome/fontawesome-common-types" "^0.2.1"
 
 "@types/mock-require@^2.0.0":
   version "2.0.0"
@@ -599,15 +599,15 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-mime-db@~1.33.0:
-  version "1.33.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.33.0.tgz#a3492050a5cb9b63450541e39d9788d2272783db"
+mime-db@~1.35.0:
+  version "1.35.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.35.0.tgz#0569d657466491283709663ad379a99b90d9ab47"
 
 mime-types@~2.1.18:
-  version "2.1.18"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.18.tgz#6f323f60a83d11146f831ff11fd66e2fe5503bb8"
+  version "2.1.19"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.19.tgz#71e464537a7ef81c15f2db9d97e913fc0ff606f0"
   dependencies:
-    mime-db "~1.33.0"
+    mime-db "~1.35.0"
 
 mime@1.4.1:
   version "1.4.1"
