@@ -15,6 +15,9 @@ function intervaller(fields: { minute?: number, hour?: number, day?: number[], e
 
     var timeOut = setTimeout(function ()
     {
+        akala.logger.verbose(getTarget(fields));
+        akala.logger.verbose(getTarget(fields).getTime());
+        akala.logger.verbose(new Date().getTime());
         process.removeListener('exit', cancelPreviousListener)
         intervaller(fields, callback, id);
         callback(fields);
