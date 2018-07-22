@@ -11,27 +11,25 @@ function intervaller(fields: { minute?: number, hour?: number, day?: number[], e
     (fields: { minute?: number, hour?: number, day?: number[], exceptions?: number[], date?: number | 'last', month?: number, lat?: number, lng?: number, tz?: number }) => void, id?: string)
 {
     if (!id)
+    {
         timers[id = uuid()] = { callback: callback };
+        process.on('exit', function ()
+        {
+            clearTimeout(timers[id].timeout);
+            delete timers[id];
+        });
+    }
 
     var timeOut = setTimeout(function ()
     {
         akala.logger.verbose(getTarget(fields));
         akala.logger.verbose(getTarget(fields).getTime());
         akala.logger.verbose(new Date().getTime());
-        process.removeListener('exit', cancelPreviousListener)
         intervaller(fields, callback, id);
         callback(fields);
     }, getTarget(fields).getTime() - new Date().getTime());
 
     timers[id].timeout = timeOut;
-
-    var cancelPreviousListener = function ()
-    {
-        clearTimeout(timeOut);
-        delete timers[id];
-    };
-
-    process.on('exit', cancelPreviousListener);
 
     return id;
 }
