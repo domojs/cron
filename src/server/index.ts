@@ -60,11 +60,11 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
                 },
                 executeTrigger(trigger)
                 {
-                    akala.logger.info(`executing trigger ${JSON.stringify(trigger.fields)}`)
-                    var id = intervaller(trigger.fields, function ()
+                    akala.logger.info(`executing trigger ${JSON.stringify(trigger.params)}`)
+                    var id = intervaller(trigger.params, function ()
                     {
-                        akala.logger.info(`trigger ${JSON.stringify(trigger.fields)}`)
-                        server.trigger({ id: id, data: { ...trigger.fields, date: new Date().toISOString() } })
+                        akala.logger.info(`trigger ${JSON.stringify(trigger.params)}`)
+                        server.trigger({ id: id, data: { ...trigger.params, date: new Date().toISOString() } })
                     });
                     return id;
                 }
