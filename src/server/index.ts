@@ -45,7 +45,7 @@ akala.injectWithName(['$isModule', '$master', '$worker'], function (isModule: ak
 
         });
 
-        akala.injectWithNameAsync(['$agent.api/@domojs/lifttt'], async function (client)
+        akala.injectWithNameAsync(['$agent.api/lifttt'], async function (client)
         {
             var cl = akala.api.jsonrpcws(lifttt.channel).createClient(client, {
                 executeAction(action)
