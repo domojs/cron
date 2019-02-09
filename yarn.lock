@@ -20,10 +20,10 @@
   optionalDependencies:
     showdown "^1.8.6"
 
-"@akala/core@^2.0.33":
-  version "2.0.59"
-  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.59.tgz#3a87786fe8119d29676e2dbf04f385d055c377ae"
-  integrity sha512-D5r5zLAGeXa3vBMtwAu9vr7Gt4SAts5Uyk0YPGNM7RcW57DAeYfvUNUCKBGYCpcUVRU6oZDKr4FhmBjsFMTReQ==
+"@akala/core@^2.0.64":
+  version "2.0.65"
+  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.65.tgz#027b1bb8e457cc8883768eab0e210354435692d5"
+  integrity sha512-V2WYAzNUPcVyKEIwbViTGnk2qt8FROrstPTTMF4QeqEpEZGxg1E0c6uzvRIJmapERFkhgG2K3/NQllXHBD4l4w==
   dependencies:
     "@akala/json-rpc-ws" "^7.0.1"
     array-flatten "^2.1.1"
@@ -31,15 +31,15 @@
     debug "^4.1.1"
     es6-promise "^4.2.4"
     isomorphic-fetch "^2.2.1"
-    mock-require "^3.0.2"
+    mock-require "^3.0.3"
     orchestrator "^0.3.8"
     parseurl "^1.3.1"
-    path-to-regexp "^2.4.0"
+    path-to-regexp "^3.0.0"
     routington "^1.0.3"
     utils-merge "^1.0.0"
-    ws "^6.1.2"
+    ws "^6.1.3"
 
-"@akala/json-rpc-ws@^4.1.11", "@akala/json-rpc-ws@^4.1.23":
+"@akala/json-rpc-ws@^4.1.11":
   version "4.1.27"
   resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-4.1.27.tgz#9936cc5c72763ed0fd9450cf9810d71922864b1e"
   integrity sha512-LO9sXQytkoAimL2LTwaNrT89o7U08i7MoUsB7f4zyegw2et4QRrD1e5FXGcZC53DvlWL/+927zeRtRwe9PHlDA==
@@ -57,12 +57,12 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^2.0.31", "@akala/server@^2.0.33", "@akala/server@^2.0.5":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.6.tgz#2b90ee1cfe7c65e75f4bbb7b61132c14aba1500e"
-  integrity sha512-CVCfvxFnFBZFR7PsYQoQMzWXObPIcwiWbE7E6NdmtSGHFaopUzraSWyJn7kwnzYN1BKb7Hk+fXaC6MqB2D8thA==
+"@akala/server@^2.0.5", "@akala/server@^2.1.11", "@akala/server@^2.1.6":
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.11.tgz#d8b9e83ac080a101f49b342606cffb72c9b03b2f"
+  integrity sha512-3cPw0XKi9v4wIbbHPNLEZ94Gl4kzEfYsY7neWIRHeuChvTvcj3ecWL6woPpce9ETqOv1L5ykoKHKUPOJ9XOU4A==
   dependencies:
-    "@akala/core" "^2.0.33"
+    "@akala/core" "^2.0.64"
     "@akala/json-rpc-ws" "^7.0.0"
     body-parser "^1.18.2"
     express "^4.16.2"
@@ -76,12 +76,12 @@
     ws "^6.1.2"
     xml2js "^0.4.19"
 
-"@domojs/lifttt@^1.0.1":
-  version "1.0.34"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.34.tgz#5c779fff9db09a74387457a55a00e29c22ec18e8"
-  integrity sha512-EeKK3orES9K5OTHottkBDvDnJryGf2kn5SuO9IrkOHqmWIVrMBF/k0SfFpUUyUetvdehtrI3toJax+XrUlGnQw==
+"@domojs/lifttt@^1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.38.tgz#5f3dab3cb728cbb79d8f54fbbd68dac2534d66bd"
+  integrity sha512-T26hhrkoUXUP0miIkJdy5ol2DIrT1wjG1jahvhVoOEQcPIswkQt7J2vOOM+pv+sdOAGpnCBcvInaFkC3sM9Etg==
   dependencies:
-    "@akala/server" "^2.0.33"
+    "@akala/server" "^2.1.6"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
     "@fortawesome/free-solid-svg-icons" "^5.1.0"
     "@fortawesome/pro-light-svg-icons" "^5.1.0"
@@ -113,10 +113,15 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.14"
 
+"@types/debug@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.0.tgz#f47877eca7cb38bbc94e716c044919bb54075828"
+  integrity sha512-QEYGliFbMQmDLZAcXJS+AbMDtnH0HjvgiALFbWPHsVn9dD75No+/MGEfpLCsAOWKg8WjtQxwfaPbRiq25XLYDw==
+
 "@types/node@*":
-  version "10.12.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.21.tgz#7e8a0c34cf29f4e17a36e9bd0ea72d45ba03908e"
-  integrity sha512-CBgLNk4o3XMnqMc0rhb6lc77IwShMEglz05deDcn2lQxyXEZivfwgYJu7SMha9V5XcrP6qZuevTHV/QrN2vjKQ==
+  version "10.12.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.24.tgz#b13564af612a22a20b5d95ca40f1bffb3af315cf"
+  integrity sha512-GWWbvt+z9G5otRBW8rssOFgRY87J9N/qbhqfjMZ+gUuL6zoL+Hm6gP/8qQBG4jjimqdaNLCehcVapZ/Fs2WjCQ==
 
 "@types/uuid@^3.4.3":
   version "3.4.4"
@@ -566,7 +571,7 @@ mimic-fn@^1.0.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
 
-mock-require@^3.0.2:
+mock-require@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/mock-require/-/mock-require-3.0.3.tgz#ccd544d9eae81dd576b3f219f69ec867318a1946"
   integrity sha512-lLzfLHcyc10MKQnNUCv7dMcoY/2Qxd6wJfbqCcVk3LDb8An4hF6ohk5AztrvgKhJCqj36uyzi/p5se+tvyD+Wg==
@@ -692,10 +697,10 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
-path-to-regexp@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.4.0.tgz#35ce7f333d5616f1c1e1bfe266c3aba2e5b2e704"
-  integrity sha512-G6zHoVqC6GGTQkZwF4lkuEyMbVOjoBKAEybQUypI1WTkqinCOrq2x6U2+phkJ1XsEMTy4LjtwPI7HW+NVrRR2w==
+path-to-regexp@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-3.0.0.tgz#c981a218f3df543fa28696be2f88e0c58d2e012a"
+  integrity sha512-ZOtfhPttCrqp2M1PBBH4X13XlvnfhIwD7yCLx+GoGoXRPQyxGOTdQMpIzPSPKXAJT/JQrdfFrgdJOyAzvgpQ9A==
 
 proxy-addr@~2.0.4:
   version "2.0.4"
@@ -968,7 +973,7 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^6.0.0, ws@^6.1.2:
+ws@^6.0.0, ws@^6.1.2, ws@^6.1.3:
   version "6.1.3"
   resolved "https://registry.yarnpkg.com/ws/-/ws-6.1.3.tgz#d2d2e5f0e3c700ef2de89080ebc0ac6e1bf3a72d"
   integrity sha512-tbSxiT+qJI223AP4iLfQbkbxkwdFcneYinM2+x46Gx2wgvbaOMO36czfdfVUBRTHvzAMRhDd98sA5d/BuWbQdg==
