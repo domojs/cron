@@ -77,9 +77,9 @@
     xml2js "^0.4.19"
 
 "@domojs/lifttt@^1.0.38":
-  version "1.0.38"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.38.tgz#5f3dab3cb728cbb79d8f54fbbd68dac2534d66bd"
-  integrity sha512-T26hhrkoUXUP0miIkJdy5ol2DIrT1wjG1jahvhVoOEQcPIswkQt7J2vOOM+pv+sdOAGpnCBcvInaFkC3sM9Etg==
+  version "1.0.40"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.40.tgz#cccca94666296b9feac933ae111020e4e0244b07"
+  integrity sha512-Yz8R7Xw60PO4uG0Zc7cxsHrrG+i9SoTLk2gSxjZ0Zk22fwszi9Rw982LabWU7WsHvdS14qLN+103ppmsfdTaFA==
   dependencies:
     "@akala/server" "^2.1.6"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
