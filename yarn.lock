@@ -3,20 +3,20 @@
 
 
 "@akala-modules/core@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@akala-modules/core/-/core-1.1.3.tgz#b7b111356eaded6a048c4d780f6af06537fb2dff"
-  integrity sha1-t7ERNW6t7WoEjE14D2rwZTf7Lf8=
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@akala-modules/core/-/core-1.2.2.tgz#8a4e54ac57291f6e011eddc50a506583184fe6b7"
+  integrity sha512-L0nnwONstpZvOdEIiQex9I1VBhnLF7u5jPKnrCxldTx9Ilzcoa66oi971lvskz6UDOOLC0z8xICaAJv9vy0ouA==
   dependencies:
-    "@akala/client" "^2.0.0-0"
-    "@akala/json-rpc-ws" "^4.1.11"
-    "@akala/server" "^2.0.5"
-    send "^0.16.1"
-    uuid "^3.2.1"
+    "@akala/client" "^2.0.75"
+    "@akala/json-rpc-ws" "^7.0.1"
+    "@akala/server" "^2.1.15"
+    send "^0.16.2"
+    uuid "^3.3.2"
 
-"@akala/client@^2.0.0-0":
-  version "2.0.71"
-  resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.0.71.tgz#50c1bc2925415024f73a0b029cfe669acf8c9f0b"
-  integrity sha512-Pl/iL+mtWs8S2durYBRKSZkQ1fn4YFm8cOXhFABhTCaTTh/0wCULFr3QZ8qwXgUD5n2hoFQmzq5MG17hwl0JJA==
+"@akala/client@^2.0.75":
+  version "2.0.75"
+  resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.0.75.tgz#7d6bbc1a20f8c6b721662c9804a92e50b2b8410b"
+  integrity sha512-yjyWOMmxJXGqczyGJAbqM/Ly426chQo+V1RFk49o6ITAqqS289rNdsa9MAZ0N0xyRaLd7H1Gu+4yKX8rT5zMWA==
   optionalDependencies:
     showdown "^1.8.6"
 
@@ -39,15 +39,6 @@
     utils-merge "^1.0.0"
     ws "^6.1.3"
 
-"@akala/json-rpc-ws@^4.1.11":
-  version "4.1.27"
-  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-4.1.27.tgz#9936cc5c72763ed0fd9450cf9810d71922864b1e"
-  integrity sha512-LO9sXQytkoAimL2LTwaNrT89o7U08i7MoUsB7f4zyegw2et4QRrD1e5FXGcZC53DvlWL/+927zeRtRwe9PHlDA==
-  dependencies:
-    debug "^3.1.0"
-    uuid "^3.3.2"
-    ws "^6.0.0"
-
 "@akala/json-rpc-ws@^7.0.0", "@akala/json-rpc-ws@^7.0.1":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-7.0.1.tgz#a1fee836a04c66021ab6ce068eed058e003f57ea"
@@ -57,7 +48,7 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^2.0.5", "@akala/server@^2.1.11", "@akala/server@^2.1.6":
+"@akala/server@^2.1.11", "@akala/server@^2.1.15", "@akala/server@^2.1.6":
   version "2.1.17"
   resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.17.tgz#31afe57f55967bf5ae3bb3677a64e70372f75983"
   integrity sha512-E3jDoHGfltqy90jlXaLjjJJibxlXsrlTZE/jC/k0K7N9R1yx71ksTievPVSGd72mE7ZBtx9NQck8xh+eDOWM1g==
@@ -773,7 +764,7 @@ sax@>=0.6.0:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-send@0.16.2, send@^0.16.1:
+send@0.16.2, send@^0.16.1, send@^0.16.2:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/send/-/send-0.16.2.tgz#6ecca1e0f8c156d141597559848df64730a6bbc1"
   integrity sha512-E64YFPUssFHEFBvpbbjr44NCLtI1AohxQ8ZSiJjQLskAdKuriYEP6VyGEsRDH8ScozGpkaX1BGvhanqCwkcEZw==
@@ -933,7 +924,7 @@ utils-merge@1.0.1, utils-merge@^1.0.0:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.2.1, uuid@^3.3.0, uuid@^3.3.2:
+uuid@^3.3.0, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
