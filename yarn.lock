@@ -48,7 +48,7 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^2.1.11", "@akala/server@^2.1.15", "@akala/server@^2.1.6":
+"@akala/server@^2.1.11", "@akala/server@^2.1.15", "@akala/server@^2.1.16":
   version "2.1.17"
   resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.17.tgz#31afe57f55967bf5ae3bb3677a64e70372f75983"
   integrity sha512-E3jDoHGfltqy90jlXaLjjJJibxlXsrlTZE/jC/k0K7N9R1yx71ksTievPVSGd72mE7ZBtx9NQck8xh+eDOWM1g==
@@ -68,11 +68,11 @@
     xml2js "^0.4.19"
 
 "@domojs/lifttt@^1.0.38":
-  version "1.0.40"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.40.tgz#cccca94666296b9feac933ae111020e4e0244b07"
-  integrity sha512-Yz8R7Xw60PO4uG0Zc7cxsHrrG+i9SoTLk2gSxjZ0Zk22fwszi9Rw982LabWU7WsHvdS14qLN+103ppmsfdTaFA==
+  version "1.0.47"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.47.tgz#fbcd59c2e78df565cd99bf4331658683ee3195ac"
+  integrity sha512-EzsgxG/oxaOfT4JLSZOEY/5j4upCNToHYvC9AcpTPB8GkVhIaidu2lCVxFq+YxVxm4BpA7xgio7cRH27L1hqCA==
   dependencies:
-    "@akala/server" "^2.1.6"
+    "@akala/server" "^2.1.16"
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
     "@fortawesome/free-solid-svg-icons" "^5.1.0"
     "@fortawesome/pro-light-svg-icons" "^5.1.0"
