@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@akala-modules/authentication@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.3.tgz#867188a990fcaacff6a9c5d47cbcc4f905d057ee"
-  integrity sha512-mi6p/2HJOXqLVPU1H7VA1QDsfAEpl++KPsuBlPfUaaZ4fmOxQvx1HqCMeUGkvnWQr5CBREGstVLGOIldXeCmAw==
+"@akala-modules/authentication@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.4.tgz#730382832ca9350553c212ba1be709f7a2192380"
+  integrity sha512-YyTI6zZQP1PJrYjQfdSH/lrkzuRembIsjQ5qu+4fL8Prde+viFlCMleYXOd4QIBlO1OryVJjAk3rAoaNHC5b7g==
   dependencies:
-    "@akala/server" "^3.0.8"
-    "@akala/storage" "^1.0.9"
+    "@akala/server" "^3.0.9"
+    "@akala/storage" "^1.0.10"
     connect-ensure-login "^0.1.1"
     oauth2orize "^1.11.0"
     passport "^0.4.0"
@@ -19,17 +19,17 @@
     uuid "^3.3.2"
 
 "@akala-modules/core@^1.1.3":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@akala-modules/core/-/core-1.2.7.tgz#a0f80d148f4854e679c13c13dc9b76952f6538ef"
-  integrity sha512-uFqrgHwepw/iJ9rAKJqmm1NgxaNrMSw22O0uqEADFdoYUH9LRG7KBn2d9HTE8m5p+IVPkXEjvYEeR2EqMel3ow==
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@akala-modules/core/-/core-1.2.8.tgz#8b40e06ed93768ac7a5886fba9da09892de8a1d7"
+  integrity sha512-FncZ4+h7XjY2v+XpdjZhz7+AcwaVUnvzji4tGQ91Y3LUcE41jtR31ThZr6wkjn5fl9HnODDHfEmelGfWzWqGNg==
   dependencies:
     "@akala/client" "^2.0.75"
     "@akala/json-rpc-ws" "^7.0.2"
-    "@akala/server" "^3.0.8"
+    "@akala/server" "^3.0.9"
     send "^0.17.1"
     uuid "^3.3.2"
   optionalDependencies:
-    "@akala-modules/authentication" "^0.1.3"
+    "@akala-modules/authentication" "^0.1.4"
 
 "@akala/client@^2.0.75":
   version "2.0.75"
@@ -57,10 +57,10 @@
     utils-merge "^1.0.0"
     ws "^6.1.3"
 
-"@akala/core@^2.0.91", "@akala/core@^2.0.92":
-  version "2.0.92"
-  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.92.tgz#0c0224d0e5a67d0f931b1d5cc190521fe4598653"
-  integrity sha512-ry1SYzaLyRxDvIobmFZa3AfJIpqTRUOMX8ZkNvi9YN8QjpCBTBcR8a7qIKoXHDyOSEHjfOX/46+c8nMXXqGWxg==
+"@akala/core@^2.0.93":
+  version "2.0.93"
+  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.93.tgz#2149ef30f1890c9997b7025df8da00f21ceba439"
+  integrity sha512-ZQ2rcAUy026sIRxy/0a0XIXM6issTjoPfLXdDwqR3lGzC8bYI3Cb0yaUmF20BF+16dkfUNFbTfW7FGAQ5+RA6A==
   dependencies:
     "@akala/json-rpc-ws" "^7.0.1"
     array-flatten "^2.1.1"
@@ -104,12 +104,12 @@
     ws "^7.1.1"
     xml2js "^0.4.19"
 
-"@akala/server@^3.0.7", "@akala/server@^3.0.8":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.8.tgz#f42630ff57384dbab0762fe4ba8b33bf24454e62"
-  integrity sha512-1IPXL3IZ35m+FIvoG5su7x0UIN4FJqqQTBal0eg831lOeNVE2JZAOMHqeCh1a/rJNlPKaDboBdjuux2dg8eKfQ==
+"@akala/server@^3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.9.tgz#b099c271eea74c0301699fe40fb7344283812d01"
+  integrity sha512-waLFt4Z1ypzwad1j2BB0/a7Dy6ws8Wfh/KKYabcOgbHcwLNlYy/KOtsmIBG6iuoIHuTk5Sw1qPknw9VchtPEMw==
   dependencies:
-    "@akala/core" "^2.0.92"
+    "@akala/core" "^2.0.93"
     "@akala/json-rpc-ws" "^7.0.2"
     body-parser "^1.18.2"
     express "^4.16.2"
@@ -123,13 +123,13 @@
     ws "^7.1.1"
     xml2js "^0.4.19"
 
-"@akala/storage@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.0.9.tgz#0461f2fec82637fe317c57fef8a4216991c5ad7c"
-  integrity sha512-yuC8+BcL76+roanIBufTo3EQwk9mZfzLvMSxboX7ieD16s2JgEdrnXWxE/aEBUUWvREk9M65hM1hxwJ7frzh2Q==
+"@akala/storage@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.0.10.tgz#55bfc4abe89fe37e99f1cd06b5b927e0f307fd1f"
+  integrity sha512-KRotPDpfgGYLpLyOKbM6lMOT/YiFOzIE5gCYIoUeH5lc4AnbGyDR87CKLk9ZPMOfSHL9A3qVDQjwRv1u3kPbgQ==
   dependencies:
-    "@akala/core" "^2.0.91"
-    "@akala/server" "^3.0.7"
+    "@akala/core" "^2.0.93"
+    "@akala/server" "^3.0.9"
     mongodb "^3.3.0-beta2"
     reflect-metadata "^0.1.13"
     sequelize "^5.12.3"
