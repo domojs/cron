@@ -76,6 +76,25 @@
     utils-merge "^1.0.0"
     ws "^6.1.3"
 
+"@akala/core@^2.0.97":
+  version "2.0.97"
+  resolved "https://registry.yarnpkg.com/@akala/core/-/core-2.0.97.tgz#31aeaba2041862d0077b1c651a39b86e0d6669b5"
+  integrity sha512-QpRIbFoJekcWLKle+xjropzlFgublT1PUt6nqjwHefewvsNXKVN/4zPM6Oge7zygy5LohDvYLk3x0y5C1NMeYg==
+  dependencies:
+    "@akala/json-rpc-ws" "^7.0.1"
+    array-flatten "^2.1.1"
+    browser-process-hrtime "^1.0.0"
+    debug "^4.1.1"
+    es6-promise "^4.2.4"
+    isomorphic-fetch "^2.2.1"
+    mock-require "^3.0.3"
+    orchestrator "^0.3.8"
+    parseurl "^1.3.1"
+    path-to-regexp "^3.0.0"
+    routington "^1.0.3"
+    utils-merge "^1.0.0"
+    ws "^6.1.3"
+
 "@akala/json-rpc-ws@^7.0.0", "@akala/json-rpc-ws@^7.0.1", "@akala/json-rpc-ws@^7.0.2":
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-7.0.2.tgz#543138e11a2a40fda2deb221bbae32afed65405b"
@@ -85,7 +104,7 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^2.1.11", "@akala/server@^2.1.16":
+"@akala/server@^2.1.11":
   version "2.1.41"
   resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.41.tgz#385631d008826c143fee3b71f2c071ec6528bb87"
   integrity sha512-28q7c5DKWglblsPz6zZG7Rywt5Kw6fPlBfhxLalqwngTUSO1fK/I9DT+gNbNYfZhhaR6p9LavHfe3YjOyDX4EQ==
@@ -104,12 +123,12 @@
     ws "^7.1.1"
     xml2js "^0.4.19"
 
-"@akala/server@^3.0.9":
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.9.tgz#b099c271eea74c0301699fe40fb7344283812d01"
-  integrity sha512-waLFt4Z1ypzwad1j2BB0/a7Dy6ws8Wfh/KKYabcOgbHcwLNlYy/KOtsmIBG6iuoIHuTk5Sw1qPknw9VchtPEMw==
+"@akala/server@^3.0.18", "@akala/server@^3.0.9":
+  version "3.0.19"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.19.tgz#84d4a7c07e779677348c801d7381956758834437"
+  integrity sha512-JOQmRSRWsQicG41lUK57GRvif4iDvu/7gbfACjg3vT8X+9VNyI2O51+wb0lbieK5PDa/4sbo6lnQjoTsNqDAew==
   dependencies:
-    "@akala/core" "^2.0.93"
+    "@akala/core" "^2.0.97"
     "@akala/json-rpc-ws" "^7.0.2"
     body-parser "^1.18.2"
     express "^4.16.2"
@@ -136,11 +155,11 @@
     uuid "^3.3.2"
 
 "@domojs/lifttt@^1.0.38":
-  version "1.0.48"
-  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.0.48.tgz#e87b5cbef887b1289611ee9fc6bf208c6da99fa3"
-  integrity sha512-Ml/NiwQ2Kmdjg0fcAJVk7Pa6fFvupGQvCcnONwQnBWPFhmi7WP6iZZZWNJzMbhzgJHhnqVFw7Yt4KIT0UjHrrQ==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@domojs/lifttt/-/lifttt-1.1.2.tgz#f95ce7f3faf2f3079e5d94e30383df9e8677bd1b"
+  integrity sha512-lArvfp6Lytto10KbF4bVyqUF34jnl12E2mwujJQV+3NuKRYLPHOMRmCxUl9jJOPML+ENPgpnfxSkA+ObJhHQUg==
   dependencies:
-    "@akala/server" "^2.1.16"
+    "@akala/server" "^3.0.18"
     "@fortawesome/fontawesome-common-types" "^0.2.19"
     uuid "^3.3.0"
 
