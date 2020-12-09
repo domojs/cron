@@ -17,7 +17,7 @@
     "license": "MIT",
     "dependencies": {
         "@akala/server": "^2.1.11",
-        "uuid": "^3.3.2"
+        "uuid": "^8.3.2"
     },
     "peerDependencies": {
         "@domojs/lifttt": "^1.0.6"
